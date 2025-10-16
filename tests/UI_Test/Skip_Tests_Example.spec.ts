@@ -8,8 +8,9 @@ test.describe('Hooks Example for Screenshot', () =>{
     await page.goto('http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx');
   })
 //To capture screenshot of particular element
-  test.skip('Login to Weborders @smoke', async ({ page }) => {
-
+  //test.skip('Login to Weborders @smoke', async ({ page }) => { //for the tags like @smoke we should remove test.skip or test.only
+  test('Login to Weborders @smoke', async ({ page }) => {
+  
   // Go to http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx
   //await page.goto('http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx');
 
